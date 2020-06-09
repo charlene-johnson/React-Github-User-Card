@@ -7,9 +7,10 @@ class FollowerCard extends React.Component {
                 {this.props.followers.map(follower =>
                     <div className="followerCard">
                         <img src={follower.avatar_url}/>
-                        <p className="followerUserName">Follower Username: {follower.login}</p>
-                        </div>
-                        )}
+                        <p className="followerUserName">Follower's Username: {follower.login}</p>
+                       <p className="followerProfile">Follower's Profile: <a href={follower.html_url}>{follower.html_url}</a></p> 
+                    </div>
+                    )}
             </div>
         )
     }

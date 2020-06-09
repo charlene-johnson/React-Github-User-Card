@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import UserCard from "./components/UserCard";
+import FollowerCard from "./components/FollowerCard";
 
 class App extends React.Component {
   state = {
@@ -13,12 +15,12 @@ class App extends React.Component {
       .get("https://api.github.com/users/charlene-johnson")
       .then(res => {
         console.log(res);
-        this.setState({user: res.data});
+        this.setState({users: res.data});
       })
       .catch(err => console.log(err));
 
       axios
-        .get("https://api.github.com/users/charlene-johnson")
+        .get("https://api.github.com/users/charlene-johnson/followers")
         .then(res => {
           console.log(res);
           this.setState({followers: res.data})
@@ -31,6 +33,15 @@ class App extends React.Component {
       <div className="App">
         <div className="title">
           <h1>Github User Card</h1>
+        </div>
+        <div className="userContainer">
+          <UserCard users={this.state.users}/>
+        </div>
+        <div className="followers">
+          <h1>Followers</h1>
+        </div>
+        <div className="followerContainer">
+          <FollowerCard followers={this.state.followers}/>
         </div>
       </div>
     )
