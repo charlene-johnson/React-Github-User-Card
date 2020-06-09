@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  font-size: 62.5%;
+  background: linear-gradient(#56ab2f, #a8e063);
+}
+h1,h2,h3,h4,h5,p {
+  font-family: 'Comfortaa', cursive;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color:green;
+
+}
+a:hover {
+  text-decoration: none;
+  color: #56ab2f;
+}
+
+.userContainer, .followerContainer {
+  width:90%;
+  margin: 2% auto;
+}
+
+.userCard, .followerCard {
+  width: 90%;
+  margin: auto;
+  padding: 2%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 6px;
+  display: flex;
+}
+
+.userCard {
+  margin-bottom: 2.5%;
+}
+.info {
+  margin-left: 2%;
+}
+
+.myPic, .followerPic {
+  border: none;
+  border-radius: 6px;
+}
+.followers {
+  text-align: center;
+}
+.followerCard {
+  margin-bottom: 2.5%;
+}
+
+button {
+  margin-left: 60%;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+  padding: 10px;
+  width: 65%;
+  font-size: 1rem;
+  margin-top: 2%;
+
+}
+button:hover {
+  background-color: #56ab2f;
+}
+
